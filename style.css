@@ -1,0 +1,85 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f7fe;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #f5f7fe;
+}
+
+/* Left - Logo */
+.logo {
+  height: 40px;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+}
+
+.nav-menu a.active {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Cart */
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111;
+  font-weight: 500;
+}
+
+.cart i {
+  font-size: 18px;
+}
+
+/* Responsive: hide nav-menu on small screen */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .cart span {
+    font-size: 14px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+}
