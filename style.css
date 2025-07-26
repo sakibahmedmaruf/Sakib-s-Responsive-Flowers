@@ -404,3 +404,94 @@ body {
     height: 200px;
   }
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.join-section {
+  background-image: url(assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.join-overlay {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.join-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.join-form input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  flex: 1 1 300px;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.join-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.join-form button:hover {
+  background-color: darkorange;
+}
+
+
+@media (max-width: 600px) {
+  .join-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .join-form {
+    flex-direction: column;
+  }
+
+  .join-form input,
+  .join-form button {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .join-form input {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .join-form button {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
